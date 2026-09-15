@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>People Analytics Ecuador</title>
+<style>
+body { font-family: 'Segoe UI', sans-serif; margin: 40px; color: #333; background-color: #f4f6f7; }
+.container { max-width: 1200px; margin: auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 12px; }
+.subtitle { color: #7f8c8d; font-style: italic; margin-bottom: 30px; }
+h2 { color: #34495e; margin-top: 40px; border-left: 5px solid #2980b9; padding-left: 10px; }
+.kpi-container { display: flex; justify-content: space-between; margin: 25px 0; gap: 20px; }
+.kpi-card { flex: 1; background: #f8f9f9; padding: 25px; border-radius: 6px; text-align: center; box-shadow: inset 0 -3px 0 #3498db; border: 1px solid #e5e8e8; }
+.kpi-card h3 { margin: 0; color: #7f8c8d; font-size: 13px; text-transform: uppercase; }
+.kpi-card .value { font-size: 32px; font-weight: bold; color: #2c3e50; margin-top: 10px; }
+.table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.table th, .table td { padding: 14px; text-align: left; border-bottom: 1px solid #eaeded; }
+.table th { background-color: #2c3e50; color: white; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+.table-striped tbody tr:nth-of-type(odd) { background-color: #f9f9f9; }
+.insights { background-color: #fef9e7; border-left: 5px solid #f1c40f; padding: 25px; margin-top: 40px; border-radius: 4px; }
+.insights li { margin-bottom: 12px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class='container'>
+<h1>Informe Ejecutivo de Reclutamiento y Selección</h1>
+<div class='subtitle'>Análisis avanzado de estructuras salariales mensuales fijos y eficiencia de canales en el mercado ecuatoriano</div>
+<h2>1. Indicadores Globales de Rendimiento (KPIs)</h2>
+<div class='kpi-container'>
+<div class='kpi-card'><h3>Tasa de Contratación</h3><div class='value'>13.1%</div></div>
+<div class='kpi-card'><h3>Tasa de Abandono</h3><div class='value'>22.2%</div></div>
+<div class='kpi-card'><h3>Días para Cubrir Vacante</h3><div class='value'>30.8 días</div></div>
+<div class='kpi-card'><h3>Días de Evaluación</h3><div class='value'>11.4 días</div></div>
+</div>
+<h2>2. Cuadro de Mando Visual e Interactivo</h2>
+<div style="height:720px; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.0.0.min.js" integrity="sha256-FEYfO0yRyLtZCpnW0Dw/0DHKQO7Afrq3ml4+rBB818o=" crossorigin="anonymous"></script>                <div id="af90c651-2cdc-4576-b7ca-90c048c4bf6c" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("af90c651-2cdc-4576-b7ca-90c048c4bf6c")) {                    Plotly.newPlot(                        "af90c651-2cdc-4576-b7ca-90c048c4bf6c",                        [{"marker":{"color":"#2c3e50"},"name":"Sueldo","x":["Gerente de Tecnolog\u00eda (CIO)","L\u00edder de Proyectos de Software","Desarrollador Fullstack Senior","Analista UI\u002fUX Specialist","Ingeniero de Datos & BI","Administrador de Sistemas Cloud","Analista Financiero T\u00e9cnico","Generalista de Talento Humano"],"y":{"dtype":"f8","bdata":"AAAAAABYq0AAAAAAAMCiQAAAAAAAQJ9AAAAAAAAAmUAAAAAAAHCXQAAAAAAA4JVAAAAAAADAkkAAAAAAAECPQA=="},"type":"bar","xaxis":"x","yaxis":"y"},{"marker":{"color":"#27ae60"},"name":"Conversi\u00f3n","x":["Gerente de Tecnolog\u00eda (CIO)","L\u00edder de Proyectos de Software","Desarrollador Fullstack Senior","Analista UI\u002fUX Specialist","Ingeniero de Datos & BI","Administrador de Sistemas Cloud","Analista Financiero T\u00e9cnico","Generalista de Talento Humano"],"y":{"dtype":"f8","bdata":"AAAAAAAAI0CamZmZmZkxQDMzMzMzszpAAAAAAAAALkCamZmZmZkvQDMzMzMzMyJAZmZmZmZmIUDNzMzMzMwYQA=="},"type":"bar","xaxis":"x2","yaxis":"y2"},{"marker":{"color":"#e74c3c"},"name":"Evaluaci\u00f3n","x":["Gerente de Tecnolog\u00eda (CIO)","L\u00edder de Proyectos de Software","Desarrollador Fullstack Senior","Analista UI\u002fUX Specialist","Ingeniero de Datos & BI","Administrador de Sistemas Cloud","Analista Financiero T\u00e9cnico","Generalista de Talento Humano"],"y":{"dtype":"f8","bdata":"AAAAAAAAJ0AAAAAAAAAiQGZmZmZmZiBAZmZmZmZmKUAzMzMzM7M0QAAAAAAAACBAAAAAAAAAIUAAAAAAAAAmQA=="},"type":"bar","xaxis":"x3","yaxis":"y3"},{"marker":{"color":"#2980b9"},"name":"Canales","x":["Multitrabajos Ecuador","Bolsa de Empleo Universitaria (ESPOL\u002fUSFQ)","Programa de Referidos Internos","Campa\u00f1a en Redes Sociales","LinkedIn Ecuador","Computrabajo"],"y":{"dtype":"f8","bdata":"MzMzMzOzNECamZmZmZkxQJqZmZmZmS1AmpmZmZmZLEBmZmZmZmYhQGZmZmZmZhZA"},"type":"bar","xaxis":"x4","yaxis":"y4"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,0.45]},"yaxis":{"anchor":"x","domain":[0.625,1.0]},"xaxis2":{"anchor":"y2","domain":[0.55,1.0]},"yaxis2":{"anchor":"x2","domain":[0.625,1.0]},"xaxis3":{"anchor":"y3","domain":[0.0,0.45]},"yaxis3":{"anchor":"x3","domain":[0.0,0.375]},"xaxis4":{"anchor":"y4","domain":[0.55,1.0]},"yaxis4":{"anchor":"x4","domain":[0.0,0.375]},"annotations":[{"font":{"size":16},"showarrow":false,"text":"Sueldo Promedio por Puesto (USD $)","x":0.225,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"Tasa de Contrataci\u00f3n por Puesto (%)","x":0.775,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"Tiempo Promedio de Evaluaci\u00f3n (D\u00edas)","x":0.225,"xanchor":"center","xref":"paper","y":0.375,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"Efectividad por Fuente de Reclutamiento (%)","x":0.775,"xanchor":"center","xref":"paper","y":0.375,"yanchor":"bottom","yref":"paper"}],"height":720,"showlegend":false},                        {"responsive": true}                    )                };            </script>        </div>
+<h2>3. Datos Duros y Desglose por Estructura de Cargos Locales</h2>
+<table border="1" class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Puesto Requerido</th>
+      <th>Total Postulantes</th>
+      <th>Total Contratados</th>
+      <th>Tasa Éxito %</th>
+      <th>Sueldo Promedio (USD)</th>
+      <th>Tiempo Promedio Eval. (Días)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gerente de Tecnología (CIO)</td>
+      <td>21</td>
+      <td>2</td>
+      <td>9.5</td>
+      <td>3500.0</td>
+      <td>11.5</td>
+    </tr>
+    <tr>
+      <td>Líder de Proyectos de Software</td>
+      <td>17</td>
+      <td>3</td>
+      <td>17.6</td>
+      <td>2400.0</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>Desarrollador Fullstack Senior</td>
+      <td>15</td>
+      <td>4</td>
+      <td>26.7</td>
+      <td>2000.0</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <td>Analista UI/UX Specialist</td>
+      <td>20</td>
+      <td>3</td>
+      <td>15.0</td>
+      <td>1600.0</td>
+      <td>12.7</td>
+    </tr>
+    <tr>
+      <td>Ingeniero de Datos &amp; BI</td>
+      <td>19</td>
+      <td>3</td>
+      <td>15.8</td>
+      <td>1500.0</td>
+      <td>20.7</td>
+    </tr>
+    <tr>
+      <td>Administrador de Sistemas Cloud</td>
+      <td>22</td>
+      <td>2</td>
+      <td>9.1</td>
+      <td>1400.0</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td>Analista Financiero Técnico</td>
+      <td>23</td>
+      <td>2</td>
+      <td>8.7</td>
+      <td>1200.0</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Generalista de Talento Humano</td>
+      <td>16</td>
+      <td>1</td>
+      <td>6.2</td>
+      <td>1000.0</td>
+      <td>11.0</td>
+    </tr>
+  </tbody>
+</table>
+<h2>4. Conclusiones y Plan de Acción Estratégico</h2>
+<div class='insights'><ul>
+<li><strong>Metodología de Reclutamiento Auditada:</strong> Los indicadores globales de tiempo se calculan con base en las posiciones cerradas con éxito, eliminando sesgos de vacantes huerfanas o canceladas.</li>
+<li><strong>Eficiencia de Operaciones:</strong> El balance entre el Time to Fill y el Time to Hire demuestra que el proceso interno de entrevistas es ágil, permitiendo enfocar esfuerzos en mejorar los canales de captación inicial.</li>
+</ul></div>
+</div>
+</body>
+</html>
